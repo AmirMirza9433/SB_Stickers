@@ -1,4 +1,5 @@
 body {
+  background-image: url("./assets/images/bg.jpg");
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,6 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .inputStyle {
   width: 90%;
@@ -18,9 +21,17 @@ body {
   border-radius: 100px;
   padding: 0 5%;
   margin-bottom: 20px;
+  color: black;
+  border: none;
+}
+.inputStyle::placeholder {
+  color: black;
+  font-weight: 700;
 }
 .button {
   width: 50%;
   height: 45px;
   border-radius: 100px;
+  font-weight: 700;
+  border: none;
 }
