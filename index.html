@@ -42,7 +42,24 @@
             itemName = document.getElementById("itemName").value;
             city = document.getElementById("city").value;
             address = document.getElementById("address").value;
-            window.open(`whatsapp://send?text=Name : ${name}  *  Phone Number : ${number}  *  Modal Name : ${modalName}  *  Screen Type : ${screenType}  *  Item Name : ${itemName}  *  City Name : ${city}  *  Address : ${address}&phone=923016248068`, '_blank');
+            if (name === '') {
+                alert("please enter your name")
+            } else if (number === '') {
+                alert("please enter your phone number")
+            } else if (modalName === '') {
+                alert('please enter your mobile modal number')
+            } else if (screenType === '') {
+                alert('please enter your screen type edge/state')
+            } else if (itemName === '') {
+                alert('please enter item name')
+            } else if (city === '') {
+                alert('please enter your city')
+            } else if (address === '') {
+                alert('please enter your complete address')
+            } else {
+
+                window.open(`whatsapp://send?text=Name : ${name}  *  Phone Number : ${number}  *  Modal Name : ${modalName}  *  Screen Type : ${screenType}  *  Item Name : ${itemName}  *  City Name : ${city}  *  Address : ${address}&phone=923016248068`, '_blank');
+            }
         }
     </script>
 
