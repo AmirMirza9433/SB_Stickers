@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <iframe width="100%" height="280" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <a style="margin: 20px"
+            href="https://www.youtube.com/embed/tgbNymZ7vqY">https://www.youtube.com/embed/tgbNymZ7vqY</a>
+        <input placeholder="Enter your name" id="name" class="inputStyle">
+        <input placeholder="Enter your phone number" id="number" class="inputStyle">
+        <input placeholder="Mobile modal name" id="modalName" class="inputStyle">
+        <input placeholder="Mobile screen edge/state" id="screenType" class="inputStyle">
+        <input placeholder="Item Name" id="itemName" class="inputStyle">
+        <input placeholder="Enter city name" id="city" class="inputStyle">
+        <input placeholder="Enter complete address" id="address" class="inputStyle">
+        <br>
+        <button class="button" onclick="myFunc()">Done</button>
+    </div>
+
+
+    <script>
+        var name;
+        var number;
+        var modalName;
+        var screenType;
+        var itemName;
+        var city;
+        var address;
+        function myFunc() {
+            name = document.getElementById("name").value;
+            number = document.getElementById("number").value;
+            modalName = document.getElementById("modalName").value;
+            screenType = document.getElementById("screenType").value;
+            itemName = document.getElementById("itemName").value;
+            city = document.getElementById("city").value;
+            address = document.getElementById("address").value;
+            window.open(`whatsapp://send?text=Name : ${name}  *  Phone Number : ${number}  *  Modal Name : ${modalName}  *  Screen Type : ${screenType}  *  Item Name : ${itemName}  *  City Name : ${city}  *  Address : ${address}&phone=923016248068`, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- "whatsapp://send?text=" +re +"&phone=92" +'3016248068' -->

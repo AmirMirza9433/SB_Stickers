@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.inputStyle {
+  width: 90%;
+  height: 45px;
+  border-radius: 100px;
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+.button {
+  width: 50%;
+  height: 45px;
+  border-radius: 100px;
+}
