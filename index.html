@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>SB-Stickers</title>
 </head>
 
@@ -15,16 +15,16 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <a target="_blank" style="margin: 20px;color: white;font-weight: bold;" href="https://youtu.be/mMAQ0xsPTx8">Edge
-            Modal Video Link</a>
-        <input placeholder="Enter your name" id="name" class="inputStyle">
-        <input placeholder="Enter your phone number" id="number" class="inputStyle">
-        <input placeholder="Mobile modal name" id="modalName" class="inputStyle">
-        <input placeholder="Mobile screen edge/state" id="screenType" class="inputStyle">
-        <input placeholder="Item Name" id="itemName" class="inputStyle">
-        <input placeholder="Enter city name" id="city" class="inputStyle">
-        <input placeholder="Enter complete address" id="address" class="inputStyle">
-        <br>
+        <a target="_blank" style="margin: 20px; color: white; font-weight: bold"
+            href="https://youtu.be/mMAQ0xsPTx8">Edge Modal Video Link</a>
+        <input placeholder="Enter your name" id="name" class="inputStyle" />
+        <input placeholder="Enter your phone number" id="number" type="number" class="inputStyle" />
+        <input placeholder="Mobile modal name" id="modalName" class="inputStyle" />
+        <input placeholder="Mobile screen edge/state" id="screenType" class="inputStyle" />
+        <input placeholder="Item Name" id="itemName" class="inputStyle" />
+        <input placeholder="Enter city name" id="city" class="inputStyle" />
+        <input placeholder="Enter complete address" id="address" class="inputStyle" />
+        <br />
         <button class="button" onclick="myFunc()">Done</button>
     </div>
     <script>
@@ -43,27 +43,31 @@
             itemName = document.getElementById("itemName").value;
             city = document.getElementById("city").value;
             address = document.getElementById("address").value;
-            if (name === '') {
-                alert("please enter your name")
-            } else if (number === '') {
-                alert("please enter your phone number")
-            } else if (modalName === '') {
-                alert('please enter your mobile modal number')
-            } else if (screenType === '') {
-                alert('please enter your screen type edge/state')
-            } else if (itemName === '') {
-                alert('please enter item name')
-            } else if (city === '') {
-                alert('please enter your city')
-            } else if (address === '') {
-                alert('please enter your complete address')
+            if (name === "") {
+                alert("please enter your name");
+            } else if (number === "") {
+                alert("please enter your phone number");
+            } else if (modalName === "") {
+                alert("please enter your mobile modal number");
+            } else if (screenType === "") {
+                alert("please enter your screen type edge/state");
+            } else if (itemName === "") {
+                alert("please enter item name");
+            } else if (city === "") {
+                alert("please enter your city");
+            } else if (address === "") {
+                alert("please enter your complete address");
             } else {
-
-                window.open(`whatsapp://send?text=Name : ${name}                                   Phone Number : ${number}  *  Modal Name : ${modalName}  *  Screen Type : ${screenType}  *  Item Name : ${itemName}  *  City Name : ${city}  *  Address : ${address}&phone=923016248068`, '_blank');
+                window.open(
+                    `whatsapp://send?text=Name : ${name + "%0a"}Phone Number : ${number + "%0a"
+                    }Modal Name : ${modalName + "%0a"}Screen Type : ${screenType + "%0a"
+                    }Item Name : ${itemName + "%0a"}City Name : ${city + "%0a"
+                    } Address : ${address}&phone=923016248068`,
+                    "_blank"
+                );
             }
         }
     </script>
-
 </body>
 
 </html>
